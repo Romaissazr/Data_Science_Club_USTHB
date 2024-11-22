@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #04334B;
+  cursor: default;
+}
+
+/* Mobile Styles */
+@media (max-width: 640px) {
+  #home {
+    padding: 20px;
+  }
+
+  #text {
+    margin-top: 70px;
+    text-align: center;
+  }
+
+  #text #title {
+    font-size: 32px;
+  }
+
+  nav {
+    position: relative;
+    margin: 0;
+  }
+
+  #text {
+    font-size: 14px;
+  }
+
+  #home #img {
+    top: 120px;
+    left: -40px;
+  }
+
+  #herobg {
+    display: none;
+  }
+
+  #heroo {
+    margin: 0 1rem;
+    width: 90%;
+  }
+
+  #heroo #title {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  #why {
+    flex-direction: column;
+  }
+
+  #grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+  }
+
+  #grid img {
+    width: 20rem;
+    margin-top: -50px;
+  }
+
+  #textt {
+    margin-top: -80px;
+  }
+
+  #about {
+    margin: 50px 0;
+  }
+
+  #about img {
+    max-width: 300px;
+    margin-bottom: -50px;
+  }
+
+  #aboutbox {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #read {
+    justify-content: center;
+    margin: 0 auto;
+    gap: -100px;
+  }
+
+  #abouttext {
+    width: 168%;
+  }
+
+  #teamsgrid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  #contactCard {
+    flex-direction: column;
+  }
+
+  #card {
+    margin: 10px 0;
+  }
+
+  #teamsimg {
+    display: none;
+  }
+
+  #details {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 50px 0;
+  }
+
+  .footer ul {
+    gap: 10px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer #social {
+    flex-direction: row;
+  }
+
+  .footer .flex {
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Tablet Styles (768px and below) */
+@media (max-width: 768px) {
+  #home {
+    padding: 20px;
+  }
+  #grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #text {
+    margin-top: 240px;
+    text-align: center;
+  }
+
+  #text #title {
+    font-size: 40px;
+  }
+
+  #text {
+    font-size: 14px;
+  }
+
+  #home #img {
+    top: 120px;
+    left: -40px;
+  }
+
+  #why {
+    flex-direction: column;
+  }
+
+  #grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet to Desktop Styles (min-width: 768px and max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #home {
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  #grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  } 
+  #text {
+    margin-top: 280px;
+    text-align: center;
+  }
+
+  #text #title {
+    font-size: 50px;
+  }
+#contactCard{
+  gap: 30px;
+}
+  #text {
+    font-size: 20px;
+  }
+  #teamsgrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for teams on large screens */
+  }
+  #home #img {
+    top: 50px;
+    left: -10px;
+  }
+}
+
+/* Large Screens (min-width: 1024px) */
+@media (min-width: 1024px) {
+  #why {
+    flex-direction: row; /* Change back to row on large screens */
+    justify-content: space-between;
+  }
+  #contactCard{
+    gap: 50px;
+  }
+  #about {
+    flex-direction: row; /* Change back to row on large screens */
+    justify-content: space-between;
+  }
+
+  #teamsgrid {
+    grid-template-columns: repeat(3, 1fr); /* 2 columns for teams on large screens */
+  }
+}
